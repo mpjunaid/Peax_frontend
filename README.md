@@ -24,6 +24,7 @@ npm install
 ### Step 3: Start the Next.js Server
 
 ```bash
+npm run build
 npm start
 ```
 
@@ -38,11 +39,14 @@ The project documentation provides insight into its implementation.
 Example images of key pages:
 
 - Login page
-- Register page
+  ![Alt text](public/readme/login.PNG)
+- Register new input
+  ![Alt text](public/readme/Regsiter_user.PNG)
 - Home page when logged in
 
 ![Homepage Screenshot](public/readme/home_login.PNG)
 
-Additionally, the editing page for information is presented in tabular format.
+-the editing page for information is presented in tabular format.
+![Alt text](public/readme/Plant_edit.PNG)
 
 The front-end design primarily utilizes Deasyui and Tailwind CSS. Real-time graphs are implemented and will update dynamically based on user interactions and data updates.

@@ -8,16 +8,19 @@ import {
   LinearScale,
   PointElement,
 } from "chart.js";
+import { Plant } from "../types";
 
 ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement);
 
-const PriceHistoryChart = ({ data }) => {
+const PriceHistoryChart = ({ data }: { data: Plant[] }) => {
   const [selectedName, setSelectedName] = useState("");
   const [chartData, setChartData] = useState(null);
 
   useEffect(() => {
     // Extract unique item names from the data
-    const uniqueNames = Array.from(new Set(data.map((item) => item.name)));
+    const uniqueNames: string[] = Array.from(
+      new Set(data.map((item) => item.name))
+    );
     // Initialize the chart with the first name in the dropdown
     if (uniqueNames.length > 0) {
       setSelectedName(uniqueNames[0]);
@@ -33,7 +36,7 @@ const PriceHistoryChart = ({ data }) => {
       const dates = filteredData.map((item) =>
         new Date(item.updated_at).toLocaleDateString()
       );
-      const prices = filteredData.map((item) => parseFloat(item.price));
+      const prices = filteredData.map((item) => item.price);
       // Update chart data
       setChartData({
         labels: dates,

@@ -59,7 +59,7 @@ const Layout = (props) => {
             integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
             crossOrigin="anonymous"
           />
-          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js" async></script>
         </Head>
         <body className="bg-blue-50 w-full">
           <div className="navbar bg-base-100 w-full bg-gray-200">
@@ -72,7 +72,10 @@ const Layout = (props) => {
           </div>
 
           <main>{props.children}</main>
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+          <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            async
+          ></script>
         </body>
       </html>
     </>

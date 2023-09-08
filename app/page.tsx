@@ -9,6 +9,7 @@ import { Pie } from "react-chartjs-2";
 import { Chart, Tooltip, Title, ArcElement, Legend } from "chart.js";
 import PriceHistoryChart from "./components/PriceHistoryChart";
 import PieChart from "./components/PieChart";
+import { Plant } from "./types";
 
 export default function Home() {
   const [message, setMessage] = useState("");
@@ -21,12 +22,12 @@ export default function Home() {
   const [selectedRow, setSelectedRow] = useState(null);
   const [pieChartData, setPieChartData] = useState(null);
 
-  const [editedData, setEditedData] = useState({
+  const [editedData, setEditedData] = useState<Plant>({
     id: null,
     name: "",
     description: "",
-    price: "",
-    stock: "",
+    price: null,
+    stock: null,
     supplier: "",
     category: "",
   });

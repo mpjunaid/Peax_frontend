@@ -38,6 +38,10 @@ The project documentation provides insight into its implementation.
 
 Example images of key pages:
 
+- Home Page
+
+   <img src="public/readme/Home.PNG" alt="Login page" height="300">
+
 - Login page
 
   <img src="public/readme/login.PNG" alt="Login page" height="300">

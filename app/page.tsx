@@ -164,7 +164,7 @@ export default function Home() {
                     With live market stock price
                   </p>
                 </div>
-                <img style={{ height: "400px" }} src="/person.png" alt="Easy" />
+                <img style={{ height: "400px" }} src="person.png" alt="Easy" />
               </div>
             </div>
           </div>
@@ -180,7 +180,7 @@ export default function Home() {
 
             <div className="card card-compact w-80 bg-base-100 shadow-xl gap-4 p-2 m-4">
               <figure>
-                <img src="easy_to.png" className="w-64" alt="Easy" />
+                <img src="/easy_to.PNG" className="w-64" alt="Easy" />
               </figure>
               <div className="card-body">
                 <h2 className="card-title">Easy-to-use interface</h2>

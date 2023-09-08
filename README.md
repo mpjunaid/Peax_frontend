@@ -1,11 +1,10 @@
 # Project Deployment Instructions
 
-To deploy the entire project, ensure that you have the following prerequisites installed:
+To deploy the entire project, make sure you have the following prerequisites installed:
 
 1. **Git**
 2. **Node.js and npm**
 3. **MySQL**
-4. **Python**
 
 ## Front End Deployment
 
@@ -28,55 +27,22 @@ npm install
 npm start
 ```
 
-## Setting up MySQL Server
+The hosted website can be accessed at the URL http://localhost:3000/.
 
-Ensure you have a MySQL server running with the following credentials:
+## Project Documentation
 
-```python
-'default': {
-    'ENGINE': 'django.db.backends.mysql',
-    'NAME': 'peax_project',
-    'USER': 'root',
-    'PASSWORD': 'rootroot',
-    'HOST': 'localhost',  # or the hostname where your MySQL server is running
-    'PORT': '3306',        # or the port on which your MySQL server is listening
-}
-```
+The project documentation provides insight into its implementation.
 
-## Deploying the Django Server
+- Every page on the website is accessible only if you are logged in. The login authentication is primarily based on user credentials.
 
-### Step 1: Clone the GitHub Repository
+Example images of key pages:
 
-```bash
-git clone <repository_url>
-cd <repository_directory>
-```
+- Login page
+- Register page
+- Home page when logged in
 
-### Step 2: Create a Virtual Environment
+![Homepage Screenshot](public/readme/home_login.PNG)
 
-```bash
-python -m venv venv
-venv\Scripts\activate  # Use 'source venv/bin/activate' on Unix-based systems
-```
+Additionally, the editing page for information is presented in tabular format.
 
-### Step 3: Install Python Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Step 4: Migrate the Database
-
-```bash
-python manage.py migrate
-```
-
-### Step 5: Run the Django Server
-
-```bash
-python manage.py runserver
-```
-
-Now your project should be deployed and running successfully.
-
-**Note:** Make sure to replace `<repository_url>` and `<repository_directory>` with the actual URL and directory name of your project repository. Additionally, ensure that you have proper MySQL server credentials set in your Django settings.
+The front-end design primarily utilizes Deasyui and Tailwind CSS. Real-time graphs are implemented and will update dynamically based on user interactions and data updates.

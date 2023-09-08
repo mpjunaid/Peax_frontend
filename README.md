@@ -43,13 +43,15 @@ Example images of key pages:
   <img src="public/readme/login.PNG" alt="Login page" height="300">
 
 - Register new input
+
   <img src="public/readme/Regsiter_user.PNG" alt="Register new input" height="300">
 
 - Home page when logged in
+
   <img src="public/readme/home_login.PNG" alt="Homepage Screenshot" height="300">
 
 - Edit page for information is presented in tabular format.
 
   <img src="public/readme/Plant_edit.PNG" alt="Edit page" height="300">
 
-The front-end design primarily utilizes Deasyui and Tailwind CSS. Real-time graphs are implemented and will update dynamically based on user interactions and data updates.
+The front-end design primarily utilizes Desyui and Tailwind CSS. Real-time graphs are implemented and will update dynamically based on user interactions and data updates.

@@ -11,8 +11,8 @@ To deploy the entire project, make sure you have the following prerequisites ins
 ### Step 1: Clone the GitHub Repository
 
 ```bash
-git clone <repository_url>
-cd <repository_directory>
+git clone https://github.com/mpjunaid/Peax_frontend.git
+cd Peax_frontend
 ```
 
 ### Step 2: Install Dependencies

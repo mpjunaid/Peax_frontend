@@ -1,34 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Deployment Instructions
 
-## Getting Started
+To deploy the entire project, ensure that you have the following prerequisites installed:
 
-First, run the development server:
+1. **Git**
+2. **Node.js and npm**
+3. **MySQL**
+4. **Python**
+
+## Front End Deployment
+
+### Step 1: Clone the GitHub Repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+git clone <repository_url>
+cd <repository_directory>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Step 2: Install Dependencies
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Step 3: Start the Next.js Server
 
-## Learn More
+```bash
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Setting up MySQL Server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Ensure you have a MySQL server running with the following credentials:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```python
+'default': {
+    'ENGINE': 'django.db.backends.mysql',
+    'NAME': 'peax_project',
+    'USER': 'root',
+    'PASSWORD': 'rootroot',
+    'HOST': 'localhost',  # or the hostname where your MySQL server is running
+    'PORT': '3306',        # or the port on which your MySQL server is listening
+}
+```
 
-## Deploy on Vercel
+## Deploying the Django Server
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Step 1: Clone the GitHub Repository
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+git clone <repository_url>
+cd <repository_directory>
+```
+
+### Step 2: Create a Virtual Environment
+
+```bash
+python -m venv venv
+venv\Scripts\activate  # Use 'source venv/bin/activate' on Unix-based systems
+```
+
+### Step 3: Install Python Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 4: Migrate the Database
+
+```bash
+python manage.py migrate
+```
+
+### Step 5: Run the Django Server
+
+```bash
+python manage.py runserver
+```
+
+Now your project should be deployed and running successfully.
+
+**Note:** Make sure to replace `<repository_url>` and `<repository_directory>` with the actual URL and directory name of your project repository. Additionally, ensure that you have proper MySQL server credentials set in your Django settings.

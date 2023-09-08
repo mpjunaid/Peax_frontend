@@ -39,14 +39,17 @@ The project documentation provides insight into its implementation.
 Example images of key pages:
 
 - Login page
-  ![Alt text](public/readme/login.PNG)
+
+  <img src="public/readme/login.PNG" alt="Login page" height="300">
+
 - Register new input
-  ![Alt text](public/readme/Regsiter_user.PNG)
+  <img src="public/readme/Regsiter_user.PNG" alt="Register new input" height="300">
+
 - Home page when logged in
+  <img src="public/readme/home_login.PNG" alt="Homepage Screenshot" height="300">
 
-![Homepage Screenshot](public/readme/home_login.PNG)
+- Edit page for information is presented in tabular format.
 
--the editing page for information is presented in tabular format.
-![Alt text](public/readme/Plant_edit.PNG)
+  <img src="public/readme/Plant_edit.PNG" alt="Edit page" height="300">
 
 The front-end design primarily utilizes Deasyui and Tailwind CSS. Real-time graphs are implemented and will update dynamically based on user interactions and data updates.
